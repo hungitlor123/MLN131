@@ -234,7 +234,7 @@ export default function App() {
           ⬢ MLN131
         </button>
         <ul style={styles.navLinks}>
-          <li>
+          <li style={styles.navItem}>
             <button
               type="button"
               onClick={() => scrollToSection("concepts")}
@@ -243,7 +243,7 @@ export default function App() {
               Khái Niệm
             </button>
           </li>
-          <li>
+          <li style={styles.navItem}>
             <button
               type="button"
               onClick={() => scrollToSection("vietnam")}
@@ -252,7 +252,7 @@ export default function App() {
               Việt Nam
             </button>
           </li>
-          <li>
+          <li style={styles.navItem}>
             <button
               type="button"
               onClick={() => scrollToSection("solutions")}
@@ -261,7 +261,7 @@ export default function App() {
               Giải Pháp
             </button>
           </li>
-          <li>
+          <li style={styles.navItem}>
             <button
               type="button"
               onClick={() => navigateTo("about")}
@@ -270,7 +270,7 @@ export default function App() {
               Chi Tiết
             </button>
           </li>
-          <li>
+          <li style={styles.navItem}>
             <button
               type="button"
               onClick={() => navigateTo("contact")}
@@ -1222,7 +1222,7 @@ const styles = {
     position: "fixed",
     top: 0,
     width: "100%",
-    padding: "2.5rem 5%",
+    padding: "3rem 5%",
     background: "rgba(10, 14, 39, 0.95)",
     backdropFilter: "blur(20px)",
     zIndex: 1000,
@@ -1243,6 +1243,9 @@ const styles = {
     textTransform: "uppercase",
     cursor: "pointer",
     transition: "all 0.4s ease",
+    background: "transparent",
+    border: "none",
+    padding: 0,
   },
 
   navLinks: {
@@ -1251,6 +1254,10 @@ const styles = {
     listStyle: "none",
     padding: 0,
     margin: 0,
+  },
+
+  navItem: {
+    marginBottom: 0,
   },
 
   navLink: {
@@ -1264,6 +1271,10 @@ const styles = {
     transition: "all 0.3s ease",
     padding: "0.5rem 0",
     borderBottom: "2px solid transparent",
+    background: "transparent",
+    border: "none",
+    fontFamily: "inherit",
+    whiteSpace: "nowrap",
   },
 
   // Hero Section
