@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { OPENROUTER_API_KEY } from "../config";
 
 // Hàm parse Markdown để hiển thị đúng định dạng
+const OPENROUTER_API_KEY = process.env.REACT_APP_OPENROUTER_API_KEY || "";
 const parseMarkdown = (text) => {
   if (!text) return null;
   
