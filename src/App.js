@@ -315,7 +315,8 @@ function HomePage({ scrollToSection, navigateTo }) {
 
           <div style={styles.heroVisual} className="animate-fade-right" style={{animationDelay: '0.2s'}}>
             <div style={styles.imagePlaceholderHero}>
-              <div style={{fontSize: '6rem', animation: 'float 4s ease-in-out infinite'}}>🖼️</div>
+              <img src="/anh-hero.jpg" alt="Giai cấp công nhân"
+                   style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit', display: 'block'}} />
             </div>
             <div style={styles.heroDecoration}></div>
           </div>
@@ -360,7 +361,8 @@ function HomePage({ scrollToSection, navigateTo }) {
 
           <div style={styles.vietnamWrapper}>
             <div style={styles.vietnamImage} className="animate-fade-left">
-              <div style={{fontSize: '6rem', animation: 'float 4s ease-in-out infinite', zIndex: 2}}>🏭</div>
+              <img src="/anh-viet-nam.jpg" alt="Công nhân Việt Nam"
+                   style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit', display: 'block'}} />
             </div>
 
             <div style={styles.vietnamContent} className="animate-fade-right" style={{animationDelay: '0.2s'}}>
@@ -447,7 +449,8 @@ function HomePage({ scrollToSection, navigateTo }) {
           </div>
 
           <div style={styles.benefitsLargeImage} className="animate-bounce">
-            <div style={{fontSize: '6rem', animation: 'float 3s ease-in-out infinite'}}>📈</div>
+            <img src="/anh-loi-ich.jpg" alt="Tầm ảnh hưởng"
+                 style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit', display: 'block'}} />
           </div>
 
           <div style={styles.benefitsStats}>
